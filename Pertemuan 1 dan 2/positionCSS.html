@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position CSS</title>
+    <link rel="stylesheet" type="text/css" href="stylePosition">
+</head>
+<body>
+    <h2>position: static</h2>
+
+    <p>Position static digunakan untuk mengatur element menjadi statis secara default
+        Elemen akan mengikuti posisi normal secara default,
+        elemen tidak dipengaruhi oleh properti seperti top, bottom, left dan right.:
+    </p>
+
+    <div class="static">
+        Elemen ini diatur menggunakan posisi: static;
+    </div>
+    <br><br><br><br>
+    <h2>position: relative;</h2>
+
+    <p>Sebuah elemen HTML yang mengatur posisi sebuah elemen relatif terhadap posisi normalnya dalam alur dokumen, 
+        tanpa mengubah posisi elemen lain di sekitarnya. 
+        Properti ini memungkinkan Anda menggeser elemen menggunakan top, right, bottom, dan left, 
+        tetapi ruang yang awalnya ditempati elemen tersebut tetap dipertahankan dalam tata letak, 
+        menciptakan ruang kosong di posisi aslinya</p>
+
+    <div class="relative">
+        Elemen ini diatur menggunakan posisi : relative;
+    </div>
+    <br><br><br><br>
+    <h2>position: fixed</h2>
+
+    <p>
+        properti CSS yang menempatkan elemen relatif terhadap jendela viewport (area yang terlihat di layar browser), 
+        membuatnya tetap di posisi yang sama meskipun halaman di-scroll. Elemen dengan position: fixed keluar dari alur normal dokumen dan tidak memengaruhi posisi elemen lain, 
+        sehingga penting untuk memberikan margin yang tepat agar elemen lain tidak tertimpa atau saling bertumpuk. Properti ini ideal digunakan untuk elemen seperti menu navigasi, 
+        header, atau tombol call-to-action yang harus selalu terlihat oleh pengguna. 
+    </p>
+    <div class="fixed">
+        Elemen ini diatur menggunakan posisi: fixed;
+    </div>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+     
+    <h2>position: abslute</h2>
+
+    <p>
+        properti CSS yang digunakan untuk memosisikan elemen secara tepat 
+        relatif terhadap elemen "induk" (parent) terdekat yang memiliki nilai
+         position selain static, atau terhadap jendela browser jika tidak ada induk non-statis. 
+         Elemen dengan position: absolute akan keluar dari alur normal dokumen (disebut normal flow), 
+         yang berarti elemen tersebut tidak memengaruhi posisi elemen lain di sekitarnya, dan posisi pastinya 
+         ditentukan oleh properti top, right, bottom, dan left
+    </p>
+
+    <div class="relative">Elemen ini diatur menggunakan posisi: relative
+        <div class="absolute">Elemen ini diatur menggunakan posisi: absolute;</div>
+    </div>
+
+    <br><br><br><br>
+    <br><br><br><br>
+
+    <h2>position: sticky;</h2>
+    <p>Cobalah untuk <b>scroll</b> untuk mengetahui bagaimana sticky bekerja.</p>
+    <p>Catatan: IE/Edge 15 dan versi yang lebih tidak mendukung sticky.</p>
+
+    <div class="sticky">Hola Aku adalah sticky</div>
+
+    <div style="padding-bottom: 2000px;">
+    <p>Dalam contoh ini, eleen sticky menempel pada posisi paling atas halaman (top:0)
+        ketika mencapai posisi scrollnya.
+    </p>
+    <p>Cobalah untuk melakukan scroll</p>
+    <p>Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Porro nesciunt voluptas adipisci, voluptates suscipit assumenda dolores sapiente deserunt repellendus? Commodi aut nesciunt expedita, sunt quos deserunt eaque vero eum iste?</p>
+    <p>Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Porro nesciunt voluptas adipisci, voluptates suscipit assumenda dolores sapiente deserunt repellendus? Commodi aut nesciunt expedita, sunt quos deserunt eaque vero eum iste?</p>
+    </div>
+
+</body>
+</html>
