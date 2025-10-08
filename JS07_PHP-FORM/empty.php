@@ -5,4 +5,13 @@
     } else {
         echo "Array terdefinisi dan tidak kosong.";
     }
+
+    echo "<br>";
+    echo "<br>";
+
+    if(empty($nonExistenVar)){
+        echo "Variabel tidak terdefinisi atau kosong.";
+    } else {
+        echo "Variabel terdefiisi dan tidak kosong.";
+    }
 ?>
