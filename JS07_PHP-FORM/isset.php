@@ -9,7 +9,7 @@
     echo "<br>";
     echo "<br>";
     
-    $data = array("nama" => "Jane", "usia" => 25);
+    $data = array("nama" => "Hernanda", "usia" => 21);
     if(isset($data["nama"])){
         echo "Nama: " . $data["nama"];
     } else {

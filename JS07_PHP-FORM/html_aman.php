@@ -4,12 +4,12 @@
     <title>HTML Aman & Validasi Email</title>
 </head>
 <body>
-    <h2>Form Input Aman & Validasi Email</h2>
+    <h2>Form Input & Validasi Email</h2>
     <form method="post" action="">
-        <label>Masukkan teks:</label>
-        <input type="text" name="input"><br><br>
+        <label>Masukkan Nama:</label>
+        <input type="text" name="nama"><br><br>
 
-        <label>Masukkan email:</label>
+        <label>Masukkan Email:</label>
         <input type="text" name="email"><br><br>
 
         <input type="submit" value="Kirim">
@@ -18,9 +18,9 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Bagian input aman
-        $input = $_POST['input'];
+        $input = $_POST['nama'];
         $input = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
-        echo "<p>Hasil input aman: $input</p>";
+        echo "<p>Hasil input nama: $input</p>";
 
         // Bagian validasi email
         $email = $_POST['email'];
