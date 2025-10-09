@@ -40,8 +40,15 @@
                     $("#email-error").text("");
                 }
                
-                if (!valid) {
-                    event.preventDefault();
+                if (valid){
+                    $.ajax({
+                        url: "proses_validasi.php",
+                        type: "POST",
+                        data: $("#myForm").serialize(),
+                        success: function(response){
+                            $("#hasil").html(response);
+                        }
+                    });
                 }
             });
         });
