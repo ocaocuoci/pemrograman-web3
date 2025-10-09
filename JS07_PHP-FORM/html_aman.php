@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form HTML Aman</title>
+    <title>HTML_Aman</title>
 </head>
 <body>
-    <h2>Contoh htmlspecialchars() Sederhana</h2>
-
-    <!-- Form input -->
+    <h2>Form Input</h2>
     <form method="post" action="">
-        Masukkan teks (boleh pakai tag HTML): <br><br>
-        <input type="text" name="input" placeholder="<h1>Halo Dunia</h1>" required>
+        <label>Masukkan teks:</label>
+        <input type="text" name="input">
         <input type="submit" value="Kirim">
     </form>
 
-    <hr>
-
     <?php
-    // Mengecek apakah form sudah dikirim
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-        // Ambil data dari form
+        // Ambil data input
         $input = $_POST['input'];
+        // Lindungi dari script berbahaya
+        $input = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
 
-        // Ubah karakter khusus menjadi teks aman
-        $aman = htmlspecialchars($input, ENT_QUOTES, 'UTF-8');
-
-        // Tampilkan hasilnya
-        echo "<b>Hasil tanpa htmlspecialchars():</b><br>";
-        echo $input; // tag HTML akan dijalankan
-        echo "<br><br>";
-
-        echo "<b>Hasil dengan htmlspecialchars():</b><br>";
-        echo $aman; // tag HTML ditampilkan apa adanya (aman)
+        echo "<p>Hasil input: $input</p>";
     }
     ?>
 </body>
