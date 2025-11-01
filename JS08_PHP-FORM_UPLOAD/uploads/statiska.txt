@@ -1,0 +1,66 @@
+statistika
+statiska itu ilmu yang berkaitan dengan pengumpulan data,
+pengolahan, analisis, dan penarikan kesimpulan dari data.
+
+1. data koleksi = mengumpulkan data, bisa lewat observasi, wawancara,
+ kuesioner, dsb.
+2. data procesing = data yang terkumpul diproses, dibersihkan, dikodekan, dikelompokkan
+3. data analyst = data yang sudah diolah dianalisis, dicari pola, hubungan,
+distribusi, dll.
+4. draw colclution = hasil analisis diinterprestasi sehingga memberikan informasi
+
+
+tipe statiska
+1. deskriptif = fokus pada menggambarkan atau 
+mendeskripsikan sebuah data yang ada
+2. inverensial = menggunakan data sampel untuk menarik kesimpulan
+terhadap populasi
+
+
+the importance of static
+statiska sangt penting dan akan selalu hadir di kehidupan sehari hari, contohnya
+1. rekap dan analisis pengeluaran serta pemasukan dalam pengelolan rumah tangga
+2. perhitungan cepat dalam pemilihan kepala daerah
+3. proses penghitungan sesuatu jg disebbut statistika
+
+
+Data = sekumpulan fakta/informasi, 
+kebanyakan data itu angka, dan jika data tidak berbentuk angka akan dikonvert
+ke bentuk angka.
+- encoding itu mengubah data yang tidak bisa dihitung ke data yang bisa dihitung
+
+
+types of data
+1. kualitatif = data non angka, tidak bisa dijumlahkan, hanya mendeskripsikan sifat
+quality, kualitas, baik buruk, agar dapat dihitung maka harus di konvert
+a. nominal = kategori tanpa urutan, sebagai simbol, tidak ada urutan, misal memilih gender
+b. ordinal = ada urutannya, variable data with proper order, tapi angka hanya simbol
+
+2. kuantitatif = quantity, data berupa angka, bisa dijumlah
+a. interval = ada jarak yang sama antar angka, tapi tidak punya nol absolut
+no true zero, contohnya suhu(0C != tidak ada suhu)
+- continous = desimal, bisa pecahan 
+- descrite = bilangan bulat 
+b. rasio = absolut zero, punya nol absolut (0 = tidak ada)
+
+
+sumber data
+data primer dan sekunder,
+primer = data yang diperoleh dari pengamatan langsung/dari sumber asli
+seperti wawancara, eksperimen, observasi
+sekunder = mengambil data rekapitulasi atau mengambil data yang sudah ada
+seperti data bps, arsip perusahaan
+
+
+variable = atribut/karakteristik yang diukur dalam penelitian, semacam parameter dalam bahsa pemrograman
+jenis variabel;
+- variabel independent(X) tidak dipengaruhi variabel lain dan justru memengaruhi variabel lain
+ex: jumlah jam belajar, gaji
+- variabel dependen(Y) dipengaruhi dengan variabel lain atau dipengaruhi variabel independen
+ex: nilai ujian, tingkat konsumsi
+- variabel kontrol
+variabel yang dibuat konstan agar tidak mengganggu hubungan x dan y
+- variabel moderatorintervening
+moderator itu memperkuat/memperlemah hubungan x-y
+intervening itu variabel perantara yang muncul diantara x-y
+

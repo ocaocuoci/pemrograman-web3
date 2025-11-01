@@ -1,0 +1,50 @@
+.upload-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.file-input-container {
+    margin: 20px 0;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-button {
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.upload-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.upload-status {
+    margin-top: 20px;
+    font-weight: bold;
+}

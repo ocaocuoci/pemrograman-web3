@@ -1,0 +1,99 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6f2, #ffd1ec);
+    margin: 0;
+    padding: 20px;
+    color: #444;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    background: #fff0f6;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+    border: 2px solid #ffcce5;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #ff69b4;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #d63384;
+}
+
+input[type="file"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1px solid #ffb3d9;
+    border-radius: 8px;
+    background-color: #fffafc;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+    background: #ff85b3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #ff66a3;
+    box-shadow: 0 0 8px rgba(255, 102, 163, 0.6);
+}
+
+#status {
+    text-align: center;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #d63384;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(255, 182, 193, 0.4);
+}
+
+th, td {
+    border: 1px solid #ffd6e8;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background: #ffb6c1;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background: #fff5f8;
+}
+
+tr:hover {
+    background: #ffe6f0;
+    transition: background 0.2s;
+}
