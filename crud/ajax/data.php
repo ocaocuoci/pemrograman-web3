@@ -53,3 +53,48 @@
     ?>
   </tbody>
 </table>
+
+<!-- Tambahkan script jQuery di bawah ini -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#example').DataTable(); // aktifkan DataTables
+  });
+
+  // fungsi untuk reset pesan error
+  function reset() {
+    document.getElementById("err_nama").innerHTML = "";
+    document.getElementById("err_jenis_kelamin").innerHTML = "";
+    document.getElementById("err_alamat").innerHTML = "";
+    document.getElementById("err_no_telp").innerHTML = "";
+  }
+
+  // saat tombol Edit diklik
+  $(document).on('click', '.edit_data', function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow'); // scroll ke atas form
+    var id = $(this).attr('id'); // ambil id dari tombol
+    $.ajax({
+      type: 'POST',
+      url: 'get_data.php', // ambil data berdasarkan id
+      data: { id: id },
+      dataType: 'json',
+      success: function(response) {
+        reset(); // hapus pesan error
+        $('html, body').animate({ scrollTop: 30 }, 'slow');
+        document.getElementById("id").value = response.id;
+        document.getElementById("nama").value = response.nama;
+        document.getElementById("alamat").value = response.alamat;
+        document.getElementById("no_telp").value = response.no_telp;
+
+        // set jenis kelamin
+        if (response.jenis_kelamin == "L") {
+          document.getElementById("jenkel1").checked = true;
+        } else {
+          document.getElementById("jenkel2").checked = true;
+        }
+      },
+      error: function(response) {
+        console.log(response.responseText);
+      }
+    });
+  });
+</script>
